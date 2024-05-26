@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std;
+
+// driver code 
+int main()
+{
+
+    char Number[9];
+    std::cout << "Please enter any even or odd number: \n";
+    // This will store each character entered into each index of the array
+    std::cin >> Number;
+
+    for (char i = 0; i < 9; i++) {
+        std::cout << Number[i] << "     " << "\n";
+    }
+    std::cout << "This is the sum of the even numbers:\n";
+
+    int sum = 0;
+    int product = 0;
+    for (char i = 0; Number[i] < 9; Number[i]++) {
+        if (Number[i] % 2 == 0) {
+            sum = sum + Number[i];
+            std::cout << sum << endl;
+        }
+            else {
+            product = product * Number[i];
+
+            }
+    }
+  return 0;
+}
